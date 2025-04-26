@@ -1,0 +1,18 @@
+package cn.sh1rocu.futurecherry.block;
+
+import cn.sh1rocu.futurecherry.block.blockentity.CherrySignBlockEntity;
+import net.minecraft.block.StandingSignBlock;
+import net.minecraft.block.WoodType;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.IBlockReader;
+
+public class CherryStandingSignBlock extends StandingSignBlock {
+    public CherryStandingSignBlock(Properties properties, WoodType woodType) {
+        super(properties, woodType);
+    }
+
+    @Override
+    public TileEntity newBlockEntity(IBlockReader world) {
+        return new CherrySignBlockEntity();
+    }
+}

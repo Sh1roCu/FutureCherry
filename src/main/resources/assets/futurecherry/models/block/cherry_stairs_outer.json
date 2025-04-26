@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "futurecherry:block/cherry_planks",
+    "side": "futurecherry:block/cherry_planks",
+    "top": "futurecherry:block/cherry_planks"
+  }
+}

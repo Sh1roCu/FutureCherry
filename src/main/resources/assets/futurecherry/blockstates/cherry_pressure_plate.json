@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "futurecherry:block/cherry_pressure_plate"
+    },
+    "powered=true": {
+      "model": "futurecherry:block/cherry_pressure_plate_down"
+    }
+  }
+}

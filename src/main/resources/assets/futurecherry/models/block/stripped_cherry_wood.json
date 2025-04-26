@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "futurecherry:block/stripped_cherry_log",
+    "side": "futurecherry:block/stripped_cherry_log"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "block.futurecherry.cherry_button": "Cherry Button",
+  "block.futurecherry.cherry_door": "Cherry Door",
+  "block.futurecherry.cherry_fence": "Cherry Fence",
+  "block.futurecherry.cherry_fence_gate": "Cherry Fence Gate",
+  "block.futurecherry.cherry_leaves": "Cherry Leaves",
+  "block.futurecherry.cherry_log": "Cherry Log",
+  "block.futurecherry.cherry_planks": "Cherry Planks",
+  "block.futurecherry.cherry_pressure_plate": "Cherry Pressure Plate",
+  "block.futurecherry.cherry_sapling": "Cherry Sapling",
+  "block.futurecherry.cherry_sign": "Cherry Sign",
+  "block.futurecherry.cherry_slab": "Cherry Slab",
+  "block.futurecherry.cherry_stairs": "Cherry Stairs",
+  "block.futurecherry.cherry_trapdoor": "Cherry Trapdoor",
+  "block.futurecherry.cherry_wood": "Cherry Wood",
+  "block.futurecherry.pink_petals": "Pink Petals",
+  "block.futurecherry.potted_cherry_sapling": "Potted Cherry Sapling",
+  "block.futurecherry.stripped_cherry_log": "Stripped Cherry Log",
+  "block.futurecherry.stripped_cherry_wood": "Stripped Cherry Wood",
+  "item.futurecherry.cherry_boat": "Cherry Boat",
+  "itemGroup.futurecherry.cherry": "Future Cherry"
+}

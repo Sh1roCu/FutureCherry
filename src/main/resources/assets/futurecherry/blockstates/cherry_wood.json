@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "futurecherry:block/cherry_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "futurecherry:block/cherry_wood"
+    },
+    "axis=z": {
+      "model": "futurecherry:block/cherry_wood",
+      "x": 90
+    }
+  }
+}
