@@ -23,6 +23,7 @@ import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -40,6 +41,13 @@ public class FutureCherry {
         FCEntities.ENTITY_TYPES.register(modEventBus);
         FCParticleTypes.PARTICLE_TYPES.register(modEventBus);
         FCOverWorldBiomes.BIOMES.register(modEventBus);
+    }
+
+    @SubscribeEvent
+    public static void onCommonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            WoodType.register(CherrySignTypes.CHERRY);
+        });
     }
 
     @SubscribeEvent
@@ -62,7 +70,6 @@ public class FutureCherry {
         RenderTypeLookup.setRenderLayer(FCBlocks.CHERRY_TRAPDOOR.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(FCBlocks.PINK_PETALS.get(), RenderType.cutout());
         Atlases.addWoodType(CherrySignTypes.CHERRY);
-        WoodType.register(CherrySignTypes.CHERRY);
         ClientRegistry.bindTileEntityRenderer(FCBlockEntities.CHERRY_SIGNS.get(), SignTileEntityRenderer::new);
     }
 

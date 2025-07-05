@@ -14,11 +14,11 @@ import net.minecraftforge.common.ToolType;
 import java.util.function.Supplier;
 
 public class BaseCherryBlock extends RotatedPillarBlock {
-    private final Supplier<BlockState> strippedBlockState;
+    private final BlockState strippedBlockState;
 
     public BaseCherryBlock(Properties properties, Supplier<Block> strippedBlock) {
         super(properties);
-        this.strippedBlockState = () -> strippedBlock == null ? null : strippedBlock.get().defaultBlockState();
+        this.strippedBlockState = strippedBlock == null ? null : strippedBlock.get().defaultBlockState();
     }
 
     @Override
@@ -33,8 +33,8 @@ public class BaseCherryBlock extends RotatedPillarBlock {
 
     @Override
     public BlockState getToolModifiedState(BlockState state, World world, BlockPos pos, PlayerEntity player, ItemStack stack, ToolType toolType) {
-        if (stack.getToolTypes().contains(ToolType.AXE))
-            return this.strippedBlockState.get().setValue(AXIS, state.getValue(AXIS));
+        if (stack.getToolTypes().contains(ToolType.AXE) && this.strippedBlockState != null)
+            return this.strippedBlockState.setValue(AXIS, state.getValue(AXIS));
         return super.getToolModifiedState(state, world, pos, player, stack, toolType);
     }
 }
